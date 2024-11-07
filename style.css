@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+  background-color: white;
+}
+.header{
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 15px;
+  
+}
+.Gmail,.Images,.flask,.apps{
+  text-decoration: none;
+  color: black;
+}
+.flask,.apps,.profile{
+  font-size: 1.4rem;
+  position: relative;
+  top: 4px;
+
+}
+.profile{
+  color: black;
+  font-size: 2.7rem;
+  position: relative;
+  top: 12px;
+}
+.Gmail:hover,.Images:hover{
+  text-decoration: underline;
+}
+.flask:hover,.apps:hover{
+  background-color: lightgray;
+  border-radius: 100%;
+}
+.logo{
+  width:100%;
+  /* height:50vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  margin-top: 150px;
+}
+img{
+  width:220px;
+  position: relative;
+  top:5px;
+  margin-bottom:25px;
+} 
+.searchbar{
+  width:600px;
+  /* height: auto; */
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: wrap;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  position: relative;
+  top: 5px;
+  left: 25%;
+  margin-left: 100px;
+}
+.mic,.scanner{
+      width: 25px;
+      display: flex;
+      gap:30px;
+}
+.mic{
+  width: 30px;
+  position: relative;
+  top:10px;
+}
+.mic:hover,.scanner:hover{
+  cursor: pointer;
+}
+.searchbar:hover{
+  box-shadow: 1.5px 1.5px 1.5px 1.5px grey;
+}
+.search{
+  /* padding: 5px; */
+  font-size: 1.2rem;
+  width: 450px; 
+  /* height: 40px; */
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  display:inline-block;
+  text-align:justify;
+}
+.searchbar:hover,.search:hover{
+  background-color:white;
+}
+.searchicon{
+  margin:3px;
+  font-size: 1.2rem;
+  color: grey;
+}
+.icons{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+.button{
+  position: relative;
+  top:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+p{
+  padding:10px;
+ font-size:14px;
+ background-color:rgba(228, 228, 228, 0.438);
+ border-radius: 5px;
+ cursor: pointer;
+}
+p:hover{
+  border:1px solid lightslategrey;
+}
+.footer{
+  width: 100%;
+  /* height: 40vh; */
+   position: relative;
+  top:60%;
+}
+
+
+@media screen and (width <= 500px) {
+  .header{
+      font-size: 14px;
+      justify-content: flex-end;
+  }
+  .flask,.apps{
+      font-size:15px;
+  }
+  .profile{
+      font-size: 20px;
+      top:6px;
+  }
+  img{
+      width: 150px;
+      margin-bottom:5px;
+      top: 15px;
+  }
+  .searchbar{
+      width:300px; 
+      position: relative; 
+      top: 25px;
+      left: 15vw;
+  }
+  .searchicon{
+      font-size:15px;
+  }
+  .mic{
+       width:30px;
+       position:relative;
+       top:3px;
+  }
+   .scanner{
+      width: 20px;
+   }
+  .search{
+      width:180px;
+      font-size: 14px; 
+  }
+  
